@@ -11,6 +11,7 @@ const CategoryList = () => {
             alt={cat.title}
             className="w-full h-full object-cover object-center rounded-md"
           />
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25 rounded-md"></div>
           <div className="absolute top-0 left-0 text-white w-full h-full flex justify-center items-center">
             <div className="flex flex-col items-center gap-2">
               <span className="text-2xl font-bold">{cat.title}</span>

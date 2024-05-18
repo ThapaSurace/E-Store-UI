@@ -12,16 +12,16 @@ const ProductList = () => {
           className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4 hover:shadow-md"
         >
           {/* IMG AND ACTION */}
-          <div className="aspect-square rounded-xl bg-gray-100 relative">
+          <div className="aspect-square rounded-xl relative">
             <img
               src={product.img}
               alt={product.title}
-              className="w-full aspect-square object-cover rounded-md"
+              className="w-full aspect-square object-cover rounded-md shadow"
             />
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="flex gap-x-3 justify-center transition absolute bottom-5 w-full px-6">
-                <BiCart className="text-4xl bg-white p-1 rounded-full" />
-                <FaExpandArrowsAlt className="text-4xl bg-white p-2 rounded-full" />
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <div className="flex gap-x-3 justify-center absolute bottom-5 w-full px-6">
+                <BiCart className="text-4xl bg-white p-1 rounded-full hover:scale-110 transition duration-300 ease-in-out" />
+                <FaExpandArrowsAlt className="text-4xl bg-white p-2 rounded-full hover:scale-110 transition duration-300 ease-in-out" />
               </div>
             </div>
           </div>

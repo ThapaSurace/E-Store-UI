@@ -2,11 +2,14 @@ import React from "react";
 
 const Register = () => {
   return (
-    <div>
-      <div>
-        <h1> CREATE AN ACCOUNT</h1>
+    <div className="min-h-[80vh] flex justify-center items-center py-10 px-4">
+      <div className="border shadow-md max-w-xl w-full p-10 rounded-md">
+        <h1 className="text-center mb-4 text-xl font-semibold tracking-wider">
+          {" "}
+          CREATE AN ACCOUNT
+        </h1>
         {/* form */}
-        <form>
+        <form className="flex flex-col gap-2">
           <div>
             <label htmlFor="firstname">First Name:</label>
             <div className="mt-1">
@@ -45,12 +48,17 @@ const Register = () => {
           </div>
 
           <div>
-            <button type="submit">REGISTER</button>
+            <button
+              className="bg-teal-600 hover:bg-teal-700 w-full my-4"
+              type="submit"
+            >
+              REGISTER
+            </button>
           </div>
         </form>
-        <div>
+        <div className="text-sm">
           <span>ALREADY HAVE AN ACCOUNT? </span>
-          <span>LOGIN</span>
+          <span className="cursor-pointer">LOGIN</span>
         </div>
       </div>
     </div>

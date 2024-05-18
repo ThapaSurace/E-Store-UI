@@ -21,7 +21,7 @@ const Login = () => {
           </div>
 
           <div>
-            <button type="submit">LOGIN</button>
+            <button className="bg-teal-600 " type="submit">LOGIN</button>
           </div>
         </form>
 

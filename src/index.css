@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  font-family: "Playfair Display", serif;
+}
 
 .container{
   @apply max-w-6xl mx-auto px-4 lg:px-2
 }
 
 input,select,textarea{
-  @apply border border-slate-500 p-2 rounded-md w-full focus:outline-none focus:bg-white focus:border-2 focus:border-teal-500
+  @apply border border-slate-500 p-2 rounded-md w-full focus:outline-none focus:bg-white focus:border focus:border-slate-800
 }
 
 label{

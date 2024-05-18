@@ -4,7 +4,7 @@ import { FaFacebook, FaGoogle, FaInstagram, FaPinterest } from "react-icons/fa";
 export const Footer = () => {
   return (
     <div className="border-t border-slate-400/75 py-6">
-      <div className="container mb-10 flex justify-between">
+      <div className="container mb-10 flex justify-between flex-wrap gap-10">
         <div>
           <h1 className="text-4xl mb-2">Mero Store.</h1>
           <div className="flex gap-2 items-center text-xl">

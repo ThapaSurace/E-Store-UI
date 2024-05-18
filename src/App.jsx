@@ -28,8 +28,8 @@ function App() {
 
       {/* <Products /> */}
       {/* <Cart /> */}
-      <ProductSinglePage />
-      {/* <Footer /> */}
+      {/* <ProductSinglePage /> */}
+      <Footer />
     </>
   );
 }
