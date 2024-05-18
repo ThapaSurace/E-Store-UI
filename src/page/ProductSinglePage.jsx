@@ -1,52 +1,70 @@
 import React from "react";
+import ProductList from "../Components/ProductList";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const ProductSinglePage = () => {
   return (
-    <div className="min-h-[70vh] flex justify-center items-center">
-      <div className="container  flex flex-col md:flex-row gap-10 md:gap-20 my-10">
-        {/* img container */}
-        <div className="h-72 flex flex-col items-center">
-          <img
-            src="https://books.bizmandala.com/media/books/9781788401487/image.webp"
-            alt="img"
-            className="rounded-md h-full shadow-sm object-cover"
-          />
-          <div className="mt-4 font-semibold italic text-slate-800">
-            <span>Genres: </span> <span>Arts</span>
-          </div>
-        </div>
-
-        {/* info container */}
-        <div className="flex-1">
-          <h1 className="text-xl text-slate-900 font-semibold">
-            Elton John by O'Neill
-          </h1>
-          <div className="mt-2 font-light text-sm">
-            <span>Author: </span>Terry O'Neill
-          </div>
-          <p className="my-4">
-            Looking at Terry's photographs is like gazing through a window at
-            the most extraordinary and exciting moments of my life. I'm so glad
-            he was with us throughout the madness: in his evocative and stylish
-            photos he captured those moments as no other photographer could.-
-            Elton JohnElton John and iconic photographer Terry O'Neill worked
-            together for many years, taking in excess of 5,000 photographs. From
-            intimate backstage shots to huge stadium concerts, the photographs
-            in this book represent the very best of this archive, with most of
-            the images being shown here for the first time.O'Neill has drawn on
-            his personal relationship with Elton John to write the book's
-            introduction and captions.", author: "Terry O'Neill
-          </p>
-          <span className="font-[100] text-2xl">$ 400</span>
-
-          <div>
-            <button className="bg-slate-900 hover:bg-slate-700 mt-4">
-              ADD TO CART
-            </button>
+    <div className="container my-10">
+    <div className="flex flex-col items-center md:flex-row gap-6 md:gap-20">
+      {/* img  */}
+      <div className="md:flex-[1] flex-1">
+        <img
+          src='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703328414i/2784.jpg'
+          alt="Elton John by O'Neill"
+          className="w-full h-96 aspect-square object-cover object-center rounded-xl shadow-md"
+        />
+        <div className="mt-4 font-light italic text-lg flex gap-1 justify-center">
+          <span>Genre: </span>
+          <div className="flex gap-1">
+             Arts
           </div>
         </div>
       </div>
+      {/* info */}
+      <div className="md:flex-[2] flex-1">
+        <h1 className="text-3xl font-semibold text-slate-900 mb-3">
+        Elton John by O'Neill
+        </h1>
+        <span className="text-2xl text-slate-900">$100</span>
+        <hr className="my-4" />
+        <div className="flex flex-col gap-3">
+          <div className="flex items-center gap-1">
+            <h3 className="font-semibold text-black">Author:</h3>
+            <span>Terry O'Neill</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <h3 className="font-semibold text-black">Language:</h3>
+            <span>English</span>
+          </div>
+          <div>
+            <h3 className="font-semibold text-black mb-2">Synopsis</h3>
+            <p className="text-slate-600 leading-6 tracking-wide">
+            Looking at Terry's photographs is like gazing through a window at the most extraordinary and exciting moments of my life. I'm so glad he was with us throughout the madness: in his evocative and stylish photos he captured those moments as no other photographer could.- Elton JohnElton John and iconic photographer Terry O'Neill worked together for many years, taking in excess of 5,000 photographs. From intimate backstage shots to huge stadium concerts, the photographs in this book represent the very best of this archive, with most of the images being shown here for the first time.O'Neill has drawn on his personal relationship with Elton John to write the book's introduction and captions.",
+      author: "Terry O'Neill
+            </p>
+          </div>
+        </div>
+        <hr className="my-4" />
+        <div className="flex flex-col gap-1 items-start">
+          <div className="flex items-center gap-2 my-6">
+            <div className="border border-slate-600 p-2 rounded-md cursor-pointer">
+              <AiOutlinePlus size={30}  />
+            </div>
+            <span className="text-xl">0</span>
+            <div className="border border-slate-600 p-2 rounded-md cursor-pointer">
+              <AiOutlineMinus size={30}  />
+            </div>
+          </div>
+          <button className="uppercase bg-slate-950 hover:bg-slate-800 hover:shadow-sm text-white font-medium px-4 py-2 rounded-lg">
+            Add to cart
+          </button>
+        </div>
+      </div>
     </div>
+    {/* related products*/}
+    <h1 className="text-xl font-semibold mt-20 mb-4 ">Realted Products</h1>
+    <ProductList />
+  </div>
   );
 };
 

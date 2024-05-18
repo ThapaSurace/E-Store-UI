@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Home />*/}
+      <Home />
       {/* <Login /> */}
       {/* <Register /> */}
 
@@ -28,7 +28,7 @@ function App() {
 
       {/* <Products /> */}
       {/* <Cart /> */}
-      {/* <ProductSinglePage /> */}
+      <ProductSinglePage />
       {/* <Footer /> */}
     </>
   );
