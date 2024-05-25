@@ -46,7 +46,7 @@ export const products = [
     id: 3,
     title: "One Piece, Volume 1: Romance Dawn",
     img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1318523719i/1237398.jpg",
-    genre: ["Photography", "Music"],
+    genre: ["Manga", "Fiction"],
     synopsis:
       "A new shonen sensation in Japan, this series features Monkey D. Luffy, whose main ambition is to become a pirate. Eating the Gum-Gum Fruit gives him strange powers but also invokes the fruit's curse: anybody who consumes it can never learn to swim. Nevertheless, Monkey and his crewmate Roronoa Zoro, master of the three-sword fighting style, sail the Seven Seas of swashbuckling adventure in search of the elusive treasure One Piece.",
     price: 30,
