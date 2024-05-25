@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";
+import { IoPersonCircle } from "react-icons/io5";
 
 const Navbar = () => {
   const currentUser = true;
@@ -18,15 +19,14 @@ const Navbar = () => {
           E-BOOK
         </div>
 
-        {/* left */}
+        {/* right */}
         <div className="flex items-center gap-2">
           {currentUser ? (
             <>
               <div className="relative">
-                <img
-                  src="https://cdn.dribbble.com/users/6229959/screenshots/14421439/media/1d3513f47589f4aa40ac6d3064d436bd.png?resize=400x300&vertical=center"
-                  alt="user"
-                  className="w-6 h-6 object-cover object-center rounded-full ring-2 ring-slate-700 cursor-pointer"
+                <IoPersonCircle
+                  size={28}
+                  className="cursor-pointer"
                   onClick={() => setOpen(!open)}
                 />
                 {open && (
