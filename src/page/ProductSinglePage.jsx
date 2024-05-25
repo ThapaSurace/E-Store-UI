@@ -1,5 +1,4 @@
 import React from "react";
-import ProductList from "../Components/ProductList";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const ProductSinglePage = () => {
@@ -61,9 +60,6 @@ const ProductSinglePage = () => {
         </div>
       </div>
     </div>
-    {/* related products*/}
-    <h1 className="text-xl font-semibold mt-20 mb-4 ">Realted Products</h1>
-    <ProductList />
   </div>
   );
 };
