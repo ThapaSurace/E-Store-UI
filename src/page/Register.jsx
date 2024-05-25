@@ -34,7 +34,6 @@ const Register = () => {
 
           <div>
             <button
-              className="bg-teal-600 hover:bg-teal-700 w-full my-4"
               type="submit"
             >
               REGISTER

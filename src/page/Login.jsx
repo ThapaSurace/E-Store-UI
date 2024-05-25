@@ -11,7 +11,7 @@ const Login = () => {
             <input type="text" name="username" placeholder="username" />
           </div>
 
-          <div className="space-y-1">
+          <div>
             <label htmlFor="password">Password</label>
             <input type="password" name="password" placeholder="password" />
           </div>
