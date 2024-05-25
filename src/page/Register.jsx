@@ -12,39 +12,27 @@ const Register = () => {
         <form className="flex flex-col gap-2">
           <div>
             <label htmlFor="firstname">First Name:</label>
-            <div className="mt-1">
-              <input type="text" name="firstname" placeholder="firstname" />
-            </div>
+            <input type="text" name="firstname" placeholder="firstname" />
           </div>
 
           <div>
             <label htmlFor="lastname">Last Name:</label>
-            <div>
-              <input type="text" name="lastname" placeholder="lastname" />
-            </div>
+            <input type="text" name="lastname" placeholder="lastname" />
           </div>
 
           <div>
             <label htmlFor="username">Username:</label>
-            <div>
-              <input type="text" name="username" placeholder="username" />
-            </div>
+            <input type="text" name="username" placeholder="username" />
           </div>
 
           <div>
             <label htmlFor="email">Email</label>
-            <div>
-              <div>
-                <input type="email" name="email" placeholder="email" />
-              </div>
-            </div>
+            <input type="email" name="email" placeholder="email" />
           </div>
 
           <div>
             <label htmlFor="password">Password</label>
-            <div>
-              <input type="password" name="password" placeholder="password" />
-            </div>
+            <input type="password" name="password" placeholder="password" />
           </div>
 
           <div>
