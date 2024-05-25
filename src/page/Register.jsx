@@ -6,7 +6,7 @@ const Register = () => {
       <div>
         <h1>CREATE AN ACCOUNT</h1>
         {/* form */}
-        <form>
+        <form className="space-y-2">
           <div>
             <label htmlFor="firstname">First Name:</label>
             <input type="text" name="firstname" placeholder="firstname" />
@@ -27,7 +27,7 @@ const Register = () => {
             <input type="email" name="email" placeholder="email" />
           </div>
 
-          <div>
+          <div className="space-y-1">
             <label htmlFor="password">Password</label>
             <input type="password" name="password" placeholder="password" />
           </div>
