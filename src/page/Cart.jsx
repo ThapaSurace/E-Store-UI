@@ -22,14 +22,12 @@ const Cart = () => {
         {/* cart  */}
 
         <div className="flex-[2] flex flex-col gap-6 py-4">
-          <CartCard />
-          <CartCard />
-          <CartCard />
+          CartCard
         </div>
 
         {/* checkout */}
         <div className="flex-[1] border-[0.5px] border-gray-400 shadow-sm p-4 rounded-md h-min">
-          <CheckOutCard />
+          CheckOutCard
         </div>
       </div>
     </div>
