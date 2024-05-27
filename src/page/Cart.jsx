@@ -1,6 +1,4 @@
 import React from "react";
-import CartCard from "../Components/CartCard";
-import CheckOutCard from "../Components/CheckOutCard";
 
 const Cart = () => {
   return (
