@@ -16,19 +16,19 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      {/* <Home /> */}
       {/* <Login /> */}
       {/* <Register /> */}
 
-      {/* <Orderlist /> */}
-      {/* <ProductsList /> */}
-      {/* <UserList /> */}
+      <Orderlist />
+      <ProductsList />
+      <UserList />
       {/* <AddProduct /> */}
       {/* <EditProduct /> */}
 
-      {/* <Products /> */}
-      {/* <Cart /> */}
-      {/* <ProductSinglePage /> */}
+      {/* <Products />
+      <Cart />
+      <ProductSinglePage /> */}
       <Footer />
     </>
   );

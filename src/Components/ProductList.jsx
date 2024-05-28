@@ -27,10 +27,8 @@ const ProductList = () => {
           </div>
           {/* INFO */}
           <div>
-            <h1 className="font-semibold text-lg">
-              {product.title.length > 20
-                ? product.title.substring(0, 20) + "..."
-                : product.title}
+            <h1 className="font-semibold text-lg truncate">
+              {product.title}
             </h1>
             <p className="text-sm text-gray-500">
               by <span>{product.author}</span>

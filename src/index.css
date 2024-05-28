@@ -14,13 +14,22 @@ body{
 }
 
 input,select,textarea{
-  @apply border border-slate-500 p-2 rounded-md w-full focus:outline-none focus:bg-white focus:border focus:border-slate-800
+  @apply border border-slate-500 p-2 rounded-md w-full focus:outline-none focus:bg-white focus:border focus:border-teal-500 
 }
 
+
 label{
-  @apply text-slate-700 font-medium
+  @apply text-slate-700 block
 }
 
 button{
-  @apply py-2 px-4 rounded-md font-semibold text-white
+  @apply py-2 px-4 rounded-md font-semibold text-white transition-all duration-200 ease-in-out
+}
+
+th{
+  @apply px-6 py-3 text-start font-medium text-gray-900 capitalize tracking-wider
+}
+
+td{
+  @apply px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-700
 }
