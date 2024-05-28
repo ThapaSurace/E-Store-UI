@@ -102,4 +102,16 @@ export const products = [
     stock: 5,
     language: "Hindi",
   },
+  {
+    id: 8,
+    title: "Death Note, Vol. 1: Boredom",
+    img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1419952134i/13615.jpg",
+    genre: ["Manga"],
+    synopsis:
+      "Light Yagami is an ace student with great prospects - and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami, a death god. Any human whose name is written in the notebook dies, and now Light has vowed to use the power of the Death Note to rid the world of evil. But when criminals begin dropping dead, the authorities",
+    price: 20,
+    author: "Tsugumi Ohba",
+    stock: 5,
+    language: "English",
+  },
 ];

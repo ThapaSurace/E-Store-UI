@@ -28,15 +28,15 @@ const ProductSinglePage = () => {
         <hr className="my-4" />
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-1">
-            <h3 className="font-semibold text-black">Author:</h3>
+            <h3 className="font-semibold text-gray-900 mr-1">Author:</h3>
             <span>Terry O'Neill</span>
           </div>
           <div className="flex items-center gap-1">
-            <h3 className="font-semibold text-black">Language:</h3>
+            <h3 className="font-semibold text-gray-900 mr-1">Language:</h3>
             <span>English</span>
           </div>
           <div>
-            <h3 className="font-semibold text-black mb-2">Synopsis</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Synopsis</h3>
             <p className="text-slate-600 leading-6 tracking-wide">
             Looking at Terry's photographs is like gazing through a window at the most extraordinary and exciting moments of my life. I'm so glad he was with us throughout the madness: in his evocative and stylish photos he captured those moments as no other photographer could.- Elton JohnElton John and iconic photographer Terry O'Neill worked together for many years, taking in excess of 5,000 photographs. From intimate backstage shots to huge stadium concerts, the photographs in this book represent the very best of this archive, with most of the images being shown here for the first time.O'Neill has drawn on his personal relationship with Elton John to write the book's introduction and captions.",
       author: "Terry O'Neill
@@ -47,11 +47,11 @@ const ProductSinglePage = () => {
         <div className="flex flex-col gap-1 items-start">
           <div className="flex items-center gap-2 my-6">
             <div className="border border-slate-600 p-2 rounded-md cursor-pointer">
-              <AiOutlinePlus size={30}  />
+              <AiOutlinePlus size={25}  />
             </div>
-            <span className="text-xl">0</span>
+            <span className="text-2xl">0</span>
             <div className="border border-slate-600 p-2 rounded-md cursor-pointer">
-              <AiOutlineMinus size={30}  />
+              <AiOutlineMinus size={25}  />
             </div>
           </div>
           <button className="uppercase bg-slate-950 hover:bg-slate-800 hover:shadow-sm text-white font-medium px-4 py-2 rounded-lg">

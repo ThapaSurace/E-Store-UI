@@ -3,7 +3,8 @@ import { CiShoppingCart } from "react-icons/ci";
 import { IoPersonCircle } from "react-icons/io5";
 
 const Navbar = () => {
-  const currentUser = true;
+  const currentUser = false;
+  const isAdmin = true
   const [open, setOpen] = useState(false);
   return (
     <div className="border-b shadow-sm sticky top-0 z-20 bg-white">
@@ -42,10 +43,10 @@ const Navbar = () => {
               </div>
             </>
           ) : (
-            <div className="flex gap-4 items-center">
-              <span className="uppercase text-sm md:text-base">register</span>
-              <span className="uppercase text-sm md:text-base">sign in</span>
-            </div>
+            <>
+              <span className="uppercase text-sm md:text-base text-slate-900">register</span>
+              <span className="uppercase text-sm md:text-base text-slate-900">sign in</span>
+            </>
           )}
             {/* cart */}
           <div className="relative">
@@ -54,6 +55,7 @@ const Navbar = () => {
               0
             </div>
           </div>
+          {isAdmin && <span className="ml-3 uppercase">Dashboard</span>}
         </div>
       </div>
     </div>
